@@ -1,0 +1,301 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Globals  */
+
+.text-right {
+  text-align: right;
+}
+
+.display-desktop {
+  display: block;
+}
+
+.primary-btn {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: poppinsLight;
+  padding: 4px 16px;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar  */
+.navbar {
+  transition: 500ms;
+  padding: 1.5rem 0;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: transparent;
+}
+
+.navbar-brand {
+  transition: 500ms;
+  width: 7.5rem;
+}
+
+.nav-link {
+  font-family: poppins;
+  font-weight: 700;
+  color: #585858;
+  padding: 8px 20px !important;
+}
+
+.nav-link:hover {
+  color: #000000;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../images/menu-icon.png);
+}
+
+.nav-active {
+  transition: 500ms;
+  backdrop-filter: blur(100px);
+  padding: 0.75rem 0;
+}
+
+.nav-active .navbar-brand {
+  transition: 500ms;
+  width: 6rem;
+}
+/* Navbar Ends */
+
+.artboard-1 {
+  height: 100vh;
+  background-image: url("../images/hero-bg.png");
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img {
+  width: 35rem;
+}
+
+.artboard {
+  padding: 9rem 0;
+}
+
+.artboard-2 {
+  background-image: url("../images/artboard2-bg.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+.artboard-3 {
+  background-image: url("../images/artboard3-bg.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+.artboard-4 {
+  background-image: url("../images/artboard4-bg.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+.artboard-5 {
+  background-image: url("../images/artboard5-bg.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+.artboard3-img {
+  position: absolute;
+  top: -24rem;
+}
+
+.artboard3-img2 {
+  position: absolute;
+  bottom: -48rem;
+}
+
+.product-card {
+  background-color: #ffffff;
+  overflow: hidden;
+  border-radius: 8px;
+  position: absolute;
+  top: -10rem;
+}
+
+.product-heading {
+  font-family: AbhayaLibre;
+  font-size: 2rem;
+}
+
+.product-text {
+  font-family: AbhayaLibre;
+  font-size: 1rem;
+  color: #585858;
+  line-height: 1.25rem;
+}
+
+.footer {
+  padding: 5rem 0;
+  background-image: url("../images/footer-bg.png");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.footer-logo {
+  width: 15rem;
+}
+
+.footer-heading {
+  color: #585858;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: poppins;
+  margin-bottom: 0.5rem;
+}
+
+.footer-text {
+  color: #585858;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: poppinsLight;
+}
+
+.footer-text:hover {
+  color: #000000;
+}
+
+/* Fonts  */
+
+@font-face {
+  font-family: poppinsLight;
+  src: url(../fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: AbhayaLibre;
+  src: url(../fonts/AbhayaLibre-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: myriad;
+  src: url(../fonts/Myriad\ Pro\ Regular.ttf);
+}
+
+.primary-font {
+  font-family: AbhayaLibre;
+}
+
+.secondary-font {
+  font-family: myriad;
+}
+
+/* Colors  */
+
+.purple {
+  color: #7f517d;
+}
+
+.pink {
+  color: #ffa9a9;
+}
+
+.dark-pink {
+  color: #aa6489;
+}
+
+.green {
+  color: #968f1a;
+}
+
+.grey {
+  color: #b2b2b2;
+}
+
+/* Font Size  */
+
+.font-size-134 {
+  font-size: 8rem;
+  line-height: 6rem;
+  letter-spacing: -2px;
+}
+
+.font-size-116 {
+  font-size: 7rem;
+  line-height: 5.5rem;
+  letter-spacing: -2px;
+}
+
+.font-size-103 {
+  font-size: 6.375rem;
+  line-height: 5.5rem;
+  letter-spacing: -2px;
+}
+
+.font-size-97 {
+  font-size: 6.25rem;
+  line-height: 4.25rem;
+  letter-spacing: -2px;
+}
+
+/* Media Queries  */
+@media (max-width: 1400px) {
+  .artboard3-img2 {
+    bottom: -42rem;
+  }
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+  .hero-img {
+    width: 30rem;
+    margin: auto;
+    padding-right: 2rem;
+  }
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .display-desktop {
+    display: none;
+  }
+  .tab-text-center {
+    text-align: center;
+  }
+  .artboard3-img,
+  .artboard3-img2 {
+    position: static;
+  }
+
+  .product-card {
+    position: static;
+    max-width: 325px;
+    margin: auto;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 8px;
+  }
+}
