@@ -63,6 +63,7 @@ a {
   font-weight: 700;
   color: darkred;
   padding: 8px 20px !important;
+  cursor: pointer;
 }
 
 .nav-link:hover {
@@ -337,6 +338,75 @@ a {
 
 .showw {
   display: flex;
+}
+
+/* Contact Us Page  */
+
+.contact-section-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffa9a9;
+  z-index: -1;
+}
+
+.contact-section {
+  background: linear-gradient(172deg, #faebed 50%, transparent 50%);
+  padding: 12rem 0;
+  position: relative;
+}
+
+.contact-content {
+  z-index: 1;
+}
+
+.contact-box {
+  margin-top: 2.5rem;
+  box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  width: 100%;
+  max-width: 680px;
+  background-color: #faebed;
+  border-radius: 8px;
+}
+
+.form-label {
+  color: darkred;
+}
+
+.form-control {
+  color: #ff6f72 !important;
+  margin-right: 4px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  border: 1px solid darkred;
+}
+
+.form-control:focus {
+  outline: #ff6f72;
+  border-color: darkred;
+  box-shadow: none;
+}
+
+.form-text {
+  color: #ffa9a9;
+}
+textarea {
+  min-height: 10rem !important;
+}
+
+/* Thanks page  */
+
+.thank-you {
+  background: linear-gradient(to bottom right, white, #fce6e9, white);
+  padding: 12rem 0;
+}
+
+.thanks-img {
+  max-width: 20rem;
+  padding: 1rem 2rem;
 }
 
 /* Fonts  */
