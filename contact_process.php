@@ -1,7 +1,7 @@
 <?php
 if(isset($_REQUEST['contactForm']))
 {
-	$to = "emen@emencaffe.com";
+	$to = "contact@emencaffe.com";
 	$from = $_REQUEST['email'];
 	$first_name = $_REQUEST['first_name'];
 	$last_name = $_REQUEST['last_name'];
