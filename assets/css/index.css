@@ -6,6 +6,10 @@
 
 /* Globals  */
 
+.container-sm {
+  max-width: 992px;
+}
+
 .text-right {
   text-align: right;
 }
@@ -15,11 +19,17 @@
 }
 
 .primary-btn {
-  background-color: #000000;
+  background: linear-gradient(-45deg, #ff6f72 60%, darkred);
   color: #ffffff;
   font-family: poppinsLight;
-  padding: 4px 16px;
+  padding: 8px 20px;
   border: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.primary-btn:hover {
+  box-shadow: 2px 2px 10px 1px #ff6f72;
 }
 
 a {
@@ -111,70 +121,67 @@ a {
   background-position: center center;
   background-size: cover;
   display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.min-m-10 {
+  margin-top: min(10rem);
+  margin-left: min(2rem);
+  margin-right: min(2rem);
+  margin-bottom: min(10rem);
 }
 
 .hero-img {
   width: 35rem;
 }
 
+.hero-bg-2 {
+  object-fit: cover;
+  min-width: 100vw;
+  height: 100vh;
+}
+
 .artboard {
   padding: 9rem 0;
 }
 
-.artboard-2 {
-  background-image: url("../images/artboard2-bg.png");
+.best-seller-bg {
+  background-image: url("../images/best-seller-bg.png");
   background-position: center center;
   background-size: cover;
 }
 
-.artboard-3 {
-  background-image: url("../images/artboard3-bg.png");
+.sweet-enough-bg {
+  background-image: linear-gradient(to bottom, #facdd4 25%, transparent 25%),
+    url("../images/best-seller-bg.png");
   background-position: center center;
   background-size: cover;
 }
 
-.artboard-4 {
-  background-image: url("../images/artboard4-bg.png");
-  background-position: center center;
-  background-size: cover;
+.our-story-p {
+  padding: 12rem 0;
 }
 
-.artboard-5 {
-  background-image: url("../images/artboard5-bg.png");
-  background-position: center center;
-  background-size: cover;
+.founder-name {
+  font-family: poppins;
+  font-size: 2.25rem;
+  margin-top: 1rem;
+  font-weight: bold;
 }
 
-.artboard3-img {
-  position: absolute;
-  top: -24rem;
-}
-
-.artboard3-img2 {
-  position: absolute;
-  bottom: -48rem;
-}
-
-.product-card {
-  background-color: #ffffff;
-  overflow: hidden;
-  border-radius: 8px;
-  position: absolute;
-  top: -10rem;
-}
-
-.product-heading {
-  font-family: AbhayaLibre;
+.founder-designation {
+  font-family: poppinsLight;
   font-size: 2rem;
+  line-height: 1rem;
 }
 
-.product-text {
-  font-family: AbhayaLibre;
-  font-size: 1rem;
-  color: #585858;
-  line-height: 1.25rem;
+.founder-img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
+
+.about-us-img {
+  width: 35rem;
 }
 
 .footer {
@@ -340,6 +347,40 @@ a {
   display: flex;
 }
 
+.product-img {
+  text-align: center;
+  max-width: 90%;
+  overflow: hidden;
+}
+
+.product-img img {
+  height: 21rem;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-heading {
+  font-size: 6.5rem;
+  line-height: 5.5rem;
+  max-width: 90%;
+}
+
+.product-price {
+  color: #a9a9a9;
+  font-size: 1.75rem;
+  max-width: 90%;
+}
+
+.gallery-img {
+  overflow: hidden;
+}
+
+.gallery-img img {
+  object-fit: cover;
+  height: 23rem;
+  width: 100%;
+}
+
 /* Contact Us Page  */
 
 .contact-section-bg {
@@ -441,12 +482,25 @@ textarea {
   src: url(../fonts/MontserratAlternates-SemiBold.ttf);
 }
 
+@font-face {
+  font-family: allison;
+  src: url(../fonts/demo-allison-script.otf);
+}
+
 .primary-font {
   font-family: AbhayaLibre;
 }
 
 .secondary-font {
   font-family: myriad;
+}
+
+.allison {
+  font-family: allison;
+}
+
+.poppinsLight {
+  font-family: poppinsLight;
 }
 
 /* Colors  */
@@ -456,7 +510,11 @@ textarea {
 }
 
 .pink {
-  color: #ffa9a9;
+  color: #ffa2b6;
+}
+
+.light-pink {
+  color: #ff6f72
 }
 
 .dark-pink {
@@ -467,11 +525,28 @@ textarea {
   color: #968f1a;
 }
 
+.light-grey {
+  color: #a9a9a9;
+}
+
 .grey {
   color: #b2b2b2;
 }
 
+.dark-grey {
+  color: #a7a7a7;
+}
+
 /* Font Size  */
+
+.font-size-240 {
+  font-size: 15rem;
+  line-height: 14rem;
+}
+
+.font-size-192 {
+  font-size: 12rem;
+}
 
 .font-size-134 {
   font-size: 8rem;
@@ -497,6 +572,11 @@ textarea {
   letter-spacing: -2px;
 }
 
+.font-size-18 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
 /* Media Queries  */
 @media (max-width: 1400px) {
   .artboard3-img2 {
@@ -517,10 +597,29 @@ textarea {
   html {
     font-size: 12px;
   }
+
+  .navbar-brand {
+    width: 8.5rem;
+  }
+  .nav-active .navbar-brand {
+    width: 7rem;
+  }
+  .primary-btn {
+    font-size: 1.125rem;
+  }
 }
 @media (max-width: 768px) {
   html {
     font-size: 10px;
+  }
+  .min-m-10 {
+    margin-top: min(20rem);
+    margin-left: min(2rem);
+    margin-right: min(2rem);
+    margin-bottom: min(20rem);
+  }
+  .primary-btn {
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 767px) {
@@ -565,9 +664,35 @@ textarea {
     background-color: #f7ebed;
     height: max-content;
   }
+  .product-heading,
+  .product-img,
+  .product-price {
+    max-width: 100%;
+  }
+
+  .product-heading {
+    font-size: 9.5rem;
+    line-height: 10rem;
+  }
+  .product-img img {
+    height: 100%;
+  }
+  .sweet-enough-bg {
+    background-image: linear-gradient(to bottom, #facdd4 35%, transparent 35%),
+      url("../images/best-seller-bg.png");
+  }
+  .gallery-img img {
+    height: 15rem;
+  }
 }
 @media (max-width: 425px) {
   html {
     font-size: 8px;
+  }
+  .min-m-10 {
+    margin-top: min(20rem);
+    margin-left: min(0rem);
+    margin-right: min(0rem);
+    margin-bottom: min(20rem);
   }
 }
