@@ -3,8 +3,9 @@ if(isset($_REQUEST['contactForm']))
 {
 	$to = "contact@emencaffe.com";
 	$from = $_REQUEST['email'];
-	$first_name = $_REQUEST['first_name'];
-	$last_name = $_REQUEST['last_name'];
+	$name = $_REQUEST['name'];
+	$subject = $_REQUEST['subject'];
+	$phone = $_REQUEST['phone'];
 	$message = $_REQUEST['message'];
 
 	$headers = "From:  $from";
@@ -22,9 +23,10 @@ if(isset($_REQUEST['contactForm']))
 	$body .= "<tr><td style='border:none;'><strong>Dear Admin,</strong></td></tr>";
 	$body .= "<tr><td style='border:none;'>You have got a new email from website. Please find the details below:</td></tr>";
 	$body .= "<tr><td style='border:none;'>&nbsp;</td></tr>";
-	$body .= "<tr><td style='border:none;'><strong>First Name:</strong> {$first_name}</td></tr>";
-	$body .= "<tr><td style='border:none;'><strong>Last Name:</strong> {$last_name}</td></tr>";
-	$body .= "<tr><td style='border:none;'><strong>Email:</strong> {$from}</td></tr>";
+	$body .= "<tr><td style='border:none;'><strong>Name:</strong> {$name}</td></tr>";
+	$body .= "<tr><td style='border:none;'><strong>Email Address:</strong> {$from}</td></tr>";
+	$body .= "<tr><td style='border:none;'><strong>Phone Number:</strong> {$phone}</td></tr>";
+	$body .= "<tr><td style='border:none;'><strong>Subject:</strong> {$subject}</td></tr>";
 	$body .= "<tr><td style='border:none;'><strong>Message:</strong> {$message}</td></tr>";
 	$body .= "<tr><td style='border:none;'>&nbsp;</td></tr>";
 	$body .= "<tr><td style='border:none;'>Thank you</td></tr>";

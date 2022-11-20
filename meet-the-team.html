@@ -55,23 +55,177 @@
           </div>
         </div>
       </nav>
-      <section class="our-story-p best-seller-bg">
+      <section class="meet-the-team best-seller-bg">
         <div class="container-sm px-5">
-          <div class="d-flex flex-column align-items-center py-3">
-            <div class="about-us-img">
-              <img
-                src="../assets/images/about-us.png"
-                alt=""
-                class="img-fluid"
+          <h1 class="allison font-size-192 dark-grey text-center mt-sm-0 mt-5">
+            Our Passionists
+          </h1>
+          <p class="poppinsLight light-grey font-size-18 text-center mb-5">
+            Introducing the team that envisions exquisite quality,<br />
+            distinct and remarkable dining experience
+          </p>
+          <div class="row g-5">
+            <div class="col-sm-4 col-6 offset-sm-2">
+              <div class="d-flex flex-column align-items-center py-3">
+                <div class="team-img">
+                  <img
+                    src="../assets/images/founder.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <h1 class="team-name light-pink">Ayimen Turk</h1>
+                <h1 class="team-designation dark-grey">Founder</h1>
+              </div>
+            </div>
+            <div class="col-sm-4 col-6">
+              <div class="d-flex flex-column align-items-center py-3">
+                <div class="team-img">
+                  <img
+                    src="../assets/images/kamran.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <h1 class="team-name light-pink">Kamran Sakhawat</h1>
+                <h1 class="team-designation dark-grey">Founder</h1>
+              </div>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-sm-3 col-6">
+              <div class="d-flex flex-column align-items-center py-3">
+                <div class="sub-team-img">
+                  <img
+                    src="../assets/images/ahmad.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <h1 class="sub-team-name light-pink">Mohammad Ammad</h1>
+                <h1 class="sub-team-designation dark-grey">
+                  Operations Manager
+                </h1>
+              </div>
+            </div>
+            <div class="col-sm-3 col-6">
+              <div class="d-flex flex-column align-items-center py-3">
+                <div class="sub-team-img">
+                  <img
+                    src="../assets/images/ilyas.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <h1 class="sub-team-name light-pink">Ilyas Satti</h1>
+                <h1 class="sub-team-designation dark-grey">F6 Caffe Manager</h1>
+              </div>
+            </div>
+            <div class="col-sm-3 col-6">
+              <div class="d-flex flex-column align-items-center py-3">
+                <div class="sub-team-img">
+                  <img
+                    src="../assets/images/saniya.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <h1 class="sub-team-name light-pink">Saniya Bibi</h1>
+                <h1 class="sub-team-designation dark-grey">
+                  customer relations officer
+                </h1>
+              </div>
+            </div>
+            <div class="col-sm-3 col-6">
+              <div class="d-flex flex-column align-items-center py-3">
+                <div class="sub-team-img">
+                  <img
+                    src="../assets/images/obaid.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <h1 class="sub-team-name light-pink">Chef Obaid</h1>
+                <h1 class="sub-team-designation dark-grey">head chef</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="meet-the-team-form best-seller-bg">
+        <div class="container-sm px-5">
+          <h1 class="allison font-size-192 dark-grey text-center mt-sm-0">
+            Join The Team
+          </h1>
+          <p class="poppinsLight grey font-size-24 text-center my-5">
+            Our team is rapidly growing and we are currently seeing new bakery
+            to help contribute to our success. If you are interested in more
+            information, please complete the below form and we will reach out
+          </p>
+
+          <form action="contact_process.php" method="post" id="contactusForm">
+            <div class="mb-2">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Name"
+                id="name"
+                name="name"
+                required
               />
             </div>
-            <h1 class="allison font-size-240 pink">About us</h1>
-          </div>
-          <h1 class="light-grey poppinsLight font-size-18 text-center">
-            Embarked on a journey that resonates perfection into decadent
-            desserts. With a passion to save an extraordinary taste experience
-            and immaculate ambiance.
-          </h1>
+            <div class="mb-2">
+              <input
+                placeholder="Email Address"
+                type="email"
+                class="form-control"
+                name="email"
+                id="email"
+                required
+              />
+            </div>
+            <div class="mb-2">
+              <input
+                placeholder="Phone Number"
+                type="number"
+                class="form-control"
+                name="phone"
+                min="10"
+                max="14"
+                id="phone"
+                required
+              />
+            </div>
+            <div class="mb-2">
+              <input
+                placeholder="Your Subject"
+                type="text"
+                class="form-control"
+                id="subject"
+                name="subject"
+                required
+              />
+            </div>
+            <div class="mb-2">
+              <textarea
+                placeholder="Your Message"
+                class="form-control"
+                aria-label="With textarea"
+                id="message"
+                name="message"
+              ></textarea>
+            </div>
+            <div class="text-center">
+              <button
+                name="contactForm"
+                id="contactForm"
+                type="submit"
+                class="primary-btn mt-5"
+              >
+                Submit Form
+              </button>
+            </div>
+          </form>
         </div>
       </section>
       <footer class="footer">
