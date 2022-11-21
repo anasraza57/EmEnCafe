@@ -16,6 +16,11 @@ input::-webkit-inner-spin-button {
   max-width: 992px;
 }
 
+.container-xs {
+  max-width: 786px;
+  margin: auto;
+}
+
 .text-right {
   text-align: right;
 }
@@ -463,7 +468,7 @@ textarea::placeholder {
 }
 
 textarea {
-  min-height: 15rem !important;
+  min-height: 18rem !important;
 }
 
 /* Thanks page  */
@@ -577,6 +582,11 @@ textarea {
   line-height: 10rem;
 }
 
+.font-size-160 {
+  font-size: 10rem;
+  line-height: 10rem;
+}
+
 .font-size-134 {
   font-size: 8rem;
   line-height: 6rem;
@@ -603,6 +613,11 @@ textarea {
 
 .font-size-18 {
   font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+.font-size-20 {
+  font-size: 1.25rem;
   line-height: 1.5rem;
 }
 
