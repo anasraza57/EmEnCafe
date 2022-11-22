@@ -55,6 +55,121 @@
           </div>
         </div>
       </nav>
+      <section class="get-in-touch-box">
+        <div class="row g-5 align-items-center">
+          <div class="col-md-6">
+            <div class="overflow-hidden rounded">
+              <img src="../assets/images/map.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-md-6 ps-md-5 ps-0">
+            <form action="contact_process.php" method="post" id="contactusForm">
+              <h1 class="allison pink font-size-192">Get in Touch</h1>
+              <div class="row g-5">
+                <div class="col-md-6">
+                  <div class="d-flex align-items-baseline">
+                    <p class="get-in-touch-label">Name</p>
+                    <img
+                      src="../assets/images/down-arrow.png"
+                      alt=""
+                      class="ms-1 down-arrow"
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    class="get-in-touch-input"
+                    id="name"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="d-flex align-items-baseline">
+                    <p class="get-in-touch-label">Email</p>
+                    <img
+                      src="../assets/images/down-arrow.png"
+                      alt=""
+                      class="ms-1 down-arrow"
+                    />
+                  </div>
+                  <input
+                    type="email"
+                    class="get-in-touch-input"
+                    name="email"
+                    id="email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="d-flex align-items-baseline mt-4">
+                <p class="get-in-touch-label">Message</p>
+                <img
+                  src="../assets/images/down-arrow.png"
+                  alt=""
+                  class="ms-1 down-arrow"
+                />
+              </div>
+              <textarea
+                class="get-in-touch-input"
+                id="message"
+                name="message"
+                required
+              ></textarea>
+              <button
+                name="getInTouch"
+                id="getInTouch"
+                type="submit"
+                class="primary-btn mt-3"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="quick-support">
+        <div class="row g-3">
+          <div class="col-md-5">
+            <h1 class="allison pink font-size-192">Quick Support</h1>
+          </div>
+          <div class="col-md-7">
+            <div class="row g-4">
+              <div class="col-4">
+                <div class="quick-support-box">
+                  <div class="quick-support-img">
+                    <img src="../assets/images/location.png" alt="" />
+                  </div>
+                  <div class="quick-support-heading">Visit Us</div>
+                  <div class="quick-support-text">
+                    Ground Floor block 5E Super market F6 markaz, Islamabad,
+                    Pakistan 04403
+                  </div>
+                </div>
+              </div>
+              <div class="col-3 offset-1">
+                <div class="quick-support-box">
+                  <div class="quick-support-img">
+                    <img src="../assets/images/phone.png" alt="" />
+                  </div>
+                  <div class="quick-support-heading">Call Us</div>
+                  <div class="quick-support-text">
+                    051-2203636 <br />0319-2245003
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="quick-support-box">
+                  <div class="quick-support-img">
+                    <img src="../assets/images/email.png" alt="" />
+                  </div>
+                  <div class="quick-support-heading">Email Us</div>
+                  <div class="quick-support-text">Info@Emencaffe.com</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="meet-the-team-form best-seller-bg">
         <div class="container-xs px-5">
           <h1 class="allison font-size-160 pink text-center mt-sm-0 mb-0">
@@ -92,7 +207,6 @@
                 class="form-control"
                 id="subject"
                 name="subject"
-                required
               />
             </div>
             <div class="mb-2">
@@ -102,6 +216,7 @@
                 aria-label="With textarea"
                 id="message"
                 name="message"
+                required
               ></textarea>
             </div>
             <div class="text-center">
@@ -154,7 +269,6 @@
                 class="form-control"
                 id="subject"
                 name="subject"
-                required
               />
             </div>
             <div class="mb-2">
@@ -164,6 +278,7 @@
                 aria-label="With textarea"
                 id="message"
                 name="message"
+                required
               ></textarea>
             </div>
             <div class="text-center">
@@ -216,7 +331,6 @@
                 class="form-control"
                 id="subject"
                 name="subject"
-                required
               />
             </div>
             <div class="mb-2">
@@ -226,6 +340,7 @@
                 aria-label="With textarea"
                 id="message"
                 name="message"
+                required
               ></textarea>
             </div>
             <div class="text-center">
