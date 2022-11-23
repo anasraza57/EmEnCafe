@@ -21,6 +21,17 @@ input::-webkit-inner-spin-button {
   margin: auto;
 }
 
+.top-arrow-box {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+}
+
+.top-arrow {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
 .text-right {
   text-align: right;
 }
@@ -30,7 +41,7 @@ input::-webkit-inner-spin-button {
 }
 
 .primary-btn {
-  background: linear-gradient(-45deg, #ff6f72 60%, darkred);
+  background: #ff6d77;
   color: #ffffff;
   font-family: poppinsLight;
   padding: 8px 20px;
@@ -260,7 +271,7 @@ a {
   font-size: 1.5rem;
   font-weight: 700;
   font-family: poppins;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .footer-text {
@@ -332,11 +343,15 @@ textarea.get-in-touch-input {
   margin-bottom: 0.5rem;
 }
 
-.quick-support-img img{
+.quick-support-img img {
   margin-bottom: 0.75rem;
   margin-left: 2.75rem;
   width: 2rem;
   height: 3rem;
+}
+
+.social-icons img {
+  height: 1.5rem;
 }
 /* Menu Page  */
 
@@ -473,7 +488,6 @@ textarea.get-in-touch-input {
 .product-img {
   text-align: center;
   max-width: 90%;
-  overflow: hidden;
 }
 
 .product-img img {
@@ -492,10 +506,6 @@ textarea.get-in-touch-input {
   color: #a9a9a9;
   font-size: 1.75rem;
   max-width: 90%;
-}
-
-.gallery-img {
-  overflow: hidden;
 }
 
 .gallery-img img {
