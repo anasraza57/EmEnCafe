@@ -355,6 +355,10 @@ textarea.get-in-touch-input {
 }
 /* Menu Page  */
 
+.menupage {
+  background-color: #fde0dd;
+}
+
 .no-item-found {
   display: flex;
   justify-content: center;
@@ -497,7 +501,7 @@ textarea.get-in-touch-input {
 }
 
 .product-heading {
-  font-size: 6.5rem;
+  font-size: 5rem;
   line-height: 5.5rem;
   max-width: 90%;
 }

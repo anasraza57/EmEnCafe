@@ -1,7 +1,7 @@
 <?php
 if(isset($_REQUEST['contactForm']))
 {
-	$to = "contact@emencaffe.com";
+	$to = "Info@emencaffe.com";
 	$from = $_REQUEST['email'];
 	$name = $_REQUEST['name'];
 	$subject = $_REQUEST['subject'];
@@ -41,7 +41,7 @@ if(isset($_REQUEST['contactForm']))
 
 else if(isset($_REQUEST['enquiryContact']))
 {
-    $to = "contact@emencaffe.com";
+    $to = "Info@emencaffe.com";
 	$from = $_REQUEST['email'];
 	$name = $_REQUEST['name'];
 	$subject = $_REQUEST['subject'];
@@ -79,7 +79,7 @@ else if(isset($_REQUEST['enquiryContact']))
 
 else if(isset($_REQUEST['franchiseContact']))
 {
-    $to = "contact@emencaffe.com";
+    $to = "Info@emencaffe.com";
 	$from = $_REQUEST['email'];
 	$name = $_REQUEST['name'];
 	$subject = $_REQUEST['subject'];
@@ -117,7 +117,7 @@ else if(isset($_REQUEST['franchiseContact']))
 
 else if(isset($_REQUEST['brandContact']))
 {
-    $to = "contact@emencaffe.com";
+    $to = "Info@emencaffe.com";
 	$from = $_REQUEST['email'];
 	$name = $_REQUEST['name'];
 	$subject = $_REQUEST['subject'];
@@ -155,7 +155,7 @@ else if(isset($_REQUEST['brandContact']))
 
 else if(isset($_REQUEST['getInTouch']))
 {
-    $to = "contact@emencaffe.com";
+    $to = "Info@emencaffe.com";
 	$from = $_REQUEST['email'];
 	$name = $_REQUEST['name'];
 	$message = $_REQUEST['message'];
