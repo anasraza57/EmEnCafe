@@ -16,6 +16,10 @@ input::-webkit-inner-spin-button {
   max-width: 992px;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .container-xs {
   max-width: 786px;
   margin: auto;
@@ -98,7 +102,8 @@ a {
   cursor: pointer;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
   color: #ff6f72;
 }
 
