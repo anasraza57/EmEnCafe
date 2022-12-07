@@ -157,6 +157,10 @@ a {
   margin-bottom: min(10rem);
 }
 
+.map-min-h {
+  min-height: 300px;
+}
+
 .hero-img {
   width: 35rem;
 }
