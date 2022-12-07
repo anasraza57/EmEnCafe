@@ -27,8 +27,8 @@ input::-webkit-inner-spin-button {
 
 .top-arrow-box {
   position: fixed;
-  right: 2rem;
-  bottom: 2rem;
+  right: 1.5rem;
+  bottom: 1rem;
 }
 
 .top-arrow {
@@ -211,6 +211,10 @@ a {
   font-family: poppinsLight;
   font-size: 2rem;
   line-height: 1rem;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #ff6f72;
 }
 
 .founder-img {
