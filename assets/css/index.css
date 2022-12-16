@@ -114,6 +114,7 @@ a {
 .nav-active {
   transition: 500ms;
   backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
   padding: 0.75rem 0;
 }
 
@@ -179,6 +180,21 @@ a {
   background-image: url("../images/best-seller-bg.png");
   background-position: center center;
   background-size: cover;
+}
+
+.about-bg {
+  height: 100vh;
+  background: linear-gradient(180deg, transparent 50%, white),
+    url("../images/about-bg.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+.about-content {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .sweet-enough-bg {
@@ -507,13 +523,11 @@ textarea.get-in-touch-input {
 }
 
 .product-img img {
-  height: 21rem;
-  object-fit: cover;
   border-radius: 8px;
 }
 
 .product-heading {
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 5.5rem;
   max-width: 90%;
 }
@@ -813,9 +827,6 @@ textarea {
     font-size: 9.5rem;
     line-height: 10rem;
   }
-  .product-img img {
-    height: 100%;
-  }
   .sweet-enough-bg {
     background-image: linear-gradient(to bottom, #facdd4 35%, transparent 35%),
       url("../images/best-seller-bg.png");
@@ -839,5 +850,8 @@ textarea {
   }
   .get-in-touch-input {
     height: 4rem;
+  }
+  .about-content {
+    bottom: 8rem;
   }
 }
